@@ -1,0 +1,182 @@
+$icon-size:50px;
+$dark-overlay: rgba(0,0,0,0.7);
+
+.dark-overlay-2{
+    background: $dark-overlay; 
+}
+
+/*** NAVIGATION BAR ***/
+.navbar{
+    background: #000;
+
+    .nav-item{
+        padding-left: 1em;
+
+        .nav-link{
+            text-transform: uppercase;
+            }
+    }
+}
+
+
+/*** CAROUSEL SLIDER ***/
+.carousel-item{
+    height:450px;
+}
+.carousel-img-1{
+    background: url('../img/image1.jpeg') no-repeat center;
+    background-size: cover;
+}
+.carousel-img-2{
+    background: url('../img/image2.jpeg') no-repeat center;
+    background-size: cover;
+}
+.carousel-img-3{
+    background: url('../img/image3.jpeg') no-repeat center top;
+    background-size: cover;
+}
+.dark-overlay{
+    background: rgba($color: #000000, $alpha: 0.6);
+    min-height: 450px;
+}
+
+/*** HOME ICON ***/ 
+#home-icon{
+    .fa{
+        font-size: $icon-size;
+    }
+    h3{
+        margin: 10px 0 10px 0;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+}
+
+/*** GET STARTED ***/
+#get-started{
+    background: url('../img/bg1.jpeg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*** HOME VIDEO ***/
+#home-video{
+    background: url('../img/people.jpeg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    .fa{
+        font-size: $icon-size;
+        padding-bottom: 15px;
+        color: red;
+    }
+
+}
+
+/*** COPYRIGHT ***/
+#copyright{
+    background: #000;
+    p{
+        margin: 0;
+    }
+}
+
+/************************/
+/*** START ABOUT PAGE ***/
+/************************/
+
+/*** HEADER ***/
+
+#about-header{
+    background: url('../img/image2.jpeg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#icon-boxes{
+    .fa{
+        font-size: $icon-size;
+    }
+}
+
+#testimonial{
+    .slick-prev::before,
+    .slick-next::before{
+        color: #000;
+    }
+}
+
+/************************/
+/*** START SERVICES PAGE ***/
+/************************/
+
+#services-header{
+    background: url('../img/image3.jpeg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/************************/
+/*** START BLOG PAGE ***/
+/************************/
+
+#blog-header{
+    background: url('../img/image1.jpeg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/************************/
+/*** START CONTACT PAGE ***/
+/************************/
+
+#contact-header{
+    background: url('../img/image3.jpeg') bottom no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+/*** Media Queries For Responsive ***/
+@media(max-width: 767px){
+.navbar{
+    .nav-item{
+        padding-left: 0;
+    }
+}
+}
+@media(max-width: 494px){
+    .carousel{
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+}
+@media(max-width: 398px){
+    .carousel{
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 0.9rem;
+        }
+    }
+}
+@media(max-width: 282px){
+    .carousel{
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    }
+}
